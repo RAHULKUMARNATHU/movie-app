@@ -1,9 +1,10 @@
-import React, { useCallback } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import Navbar from './Navbar';
 import MovieCard from './MovieCard';
 import { addMovies, setShowFavourites } from '../actions';
 import { data as moviesList } from '../data';
-import { connect} from '../index';
+// import { connect} from '../index';
 
 class App extends React.Component {
   componentDidMount() {
